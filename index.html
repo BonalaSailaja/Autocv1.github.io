@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <div class="left">
+            <form>
+                <label for="">Name : </label>
+                <input id="name" type="text" placeholder="name"><br>
+                <label for="">Email : </label>
+                <input id="Email" type="text" placeholder="email"><br>
+                <label for="">Phone : </label>
+                <input id="phone" type="text" placeholder="phone"><br>
+                <label for="">Github : </label>
+                <input id="github" type="text" placeholder="github"><br>
+                <label for="">Linkedin : </label>
+                <input id="linkedin" type="text" placeholder="Linkedin"><br>
+                <fieldset>
+                    <legend>Education</legend>
+                    <th>Degree:</th>
+                    <input type="text"  id="name"  placeholder="Degree" /><br/>
+                    <th>College:</th>
+                    <input type="text"  id="name"  placeholder="College" /><br/>
+                    <th>Starting Year:</th>
+                    <input type="text"  id="name"  placeholder="Starting Year" /><br/>
+                    <th>Passing Year:</th>
+                    <input type="text"  id="name"  placeholder="Closing Year" /><br/>
+                    <th>CGPA</th>
+                    <input id="name" type="text" placeholder="  CGPA"><br/>
+                    <!-- Degree , College , Starting Year , Passing Year , CGPA -->
+                </fieldset>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <th>Skills:</th>
+                    <textarea name="" id="" cols="20" rows="4" placeholder="Skills eg:HTML , CSS"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Projects</legend>
+                    <th>Project:</th>
+                    <input id="name" type="text" placeholder="  project"><br/>
+                    <th>Description:</th>
+                    <textarea name="" id="" cols="20" rows="4" placeholder="Write in HTML format"></textarea><br/>
+                    <th>Link:</th>
+                    <input id="name" type="text" placeholder="  link"><br/>
+                    <!-- Project , Description , Link -->
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <th>Company:</th>
+                    <input id="name" type="text" placeholder="  Company"><br/>
+                    <th>Designation:</th>
+                    <input id="name" type="text" placeholder="  Designation"><br/>
+                    <th>Duration:</th>
+                    <input id="name" type="text" placeholder="-/-/-"><br/>
+                    <th>Description:</th>
+                    <textarea name="" id="" cols="20" rows="4" placeholder="Write in HTML format"></textarea>
+                    <!-- Company , Designation , Duration , Description -->
+                </fieldset>
+                <button type="submit" class="btn">submit</button>
+                <button type="reset" class="btn">reset</button>
+                
+                <button class="btn" onclick="handleLeft()">View & Print</button>
+            </form>
+        </div>
+        <div class="right">
+            <div class="block1">
+                
+                <!--Email , Phone , Github , Linkedin  -->
+            </div>
+            <div class="block2">
+                <h2>Education</h2>
+            </div>
+            <div class="block3">
+            </div>
+            <div class="block4">
+                <h2>Project</h2>
+            </div>
+            <div class="block5">
+                <h2>Experience</h2>
+            </div>
+            <button class="btn print" onclick="handlePrint()">Print</button>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
